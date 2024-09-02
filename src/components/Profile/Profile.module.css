@@ -1,0 +1,38 @@
+.frame {
+  border: 13px solid rgb(238, 92, 92);
+  border-radius: 25px;
+  padding: 0px;
+}
+.profileImg {
+  border-radius: 50%;
+  width: 50%;
+  background-color: #1e1212;
+  margin: 20px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  background-color: #f9f9f9;
+  border-radius: 0 0 8px 8px;
+  border-top: 2px solid rgb(65, 65, 67);
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+.item {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(1, 1, 11);
+  border: 2px solid rgb(83, 83, 85);
+  border-bottom: none;
+  border-left: none;
+  margin: 0;
+}
+.list :last-child {
+  border-right: none;
+}

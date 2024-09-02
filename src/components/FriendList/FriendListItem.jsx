@@ -3,10 +3,14 @@ import styles from "./FriendList.module.css";
 export function FriendListItem({ name, avatar, isOnline }) {
   return (
     <li className={styles.item}>
-      <img src={avatar} alt="Avatar" width="48" />
+      <img src={avatar} alt="Avatar" width="68" />
       <p>{name}</p>
-      {/* <p className='isOnline'>{isOnline}</p> */}
-      <span className={isOnline ? styles.online : styles.offline}></span>
+
+      <p>
+        <span className={isOnline ? styles.online : styles.offline}>
+          {isOnline ? "Online" : "Offline"}
+        </span>
+      </p>
     </li>
   );
 }
